@@ -1,0 +1,325 @@
+/* General Page Styling */
+.contact-page {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Contact Header */
+.contact-header {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-description {
+    font-size: 16px;
+    color: white; /* Changed from gray to white for visibility */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Breadcrumb Full-Width Container */
+.breadcrumb-container {
+    width: 100%;
+    background-color: #3a3a3a; /* Dark gray background */
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Breadcrumb Content */
+  .breadcrumb-content {
+    max-width: 1200px; /* Ensures it does not stretch too much */
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: left;
+  }
+  
+  /* Breadcrumb Links */
+  .breadcrumb-home {
+    color: #4CAF50; /* Green color */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .breadcrumb-home:hover {
+    color: #45a049;
+  }
+  
+  /* Breadcrumb Text */
+  .breadcrumb-content span {
+    font-size: 18px;
+    color: white;
+  }
+  
+/* Contact Info Section */
+.contact-info-container {
+    padding: 50px 0;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    background-color: #111;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Removed Green Line */
+.contact-info-container::after {
+    display: none;
+}
+
+/* Icons Inside Circle */
+.icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #3cb371;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+}
+
+.icon {
+    font-size: 28px;
+    color: white;
+}
+
+/* Info Box */
+.info-box {
+    text-align: center;
+    flex: 1;
+}
+
+.info-box h5 {
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
+
+.info-box p {
+    color: #aaa;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: #111;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #454746;
+    background-color: black !important;
+    color: white !important;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: gray !important;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #3cb371;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact-form button:hover {
+    background-color: #2e8b57;
+}
+
+
+/* Icons Inside Circle - Default State */
+.icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: black; /* Default background black */
+    border: 2px solid #3cb371; /* Green border */
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.icon {
+    font-size: 28px;
+    color: #3cb371; /* Default icon color green */
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.icon-circle:hover {
+    background-color: #3cb371; /* Green background on hover */
+}
+
+.icon-circle:hover .icon {
+    color: white; /* White icon on hover */
+}
+.contact-item {
+    display: flex;
+    flex-direction: column; /* Stack icon and text */
+    align-items: center;
+    flex: 1; /* Distribute space equally */
+    padding: 10px;
+    min-width: 150px; /* Prevents shrinking too much */
+}
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        text-align: center;
+    }
+
+    .contact-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Stack icon above text */
+        align-items: center; /* Center alignment */
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    @media (max-width: 768px) {
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Ensures everything stays centered */
+            text-align: center;
+            width: 100%;
+        }
+    
+        .icon-circle {
+            margin-left: 0 !important; /* Removes any forced left margin */
+            margin: 0 auto 10px !important; /* Ensures it's fully centered */
+        }
+    }
+    
+
+    .icon-circle {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 10px; /* Center icon and add spacing below */
+        margin-left: 90px;
+    }
+    @media (max-width: 768px) {
+        .icon-circle {
+            margin-left: 100px;
+            margin: 0 auto 10px; /* Move slightly to the left */
+        }
+    }
+
+    .icon {
+        font-size: 28px;
+    }
+
+    .contact-text {
+        text-align: center; /* Ensure text is centered */
+    }
+}
+
+  
+  .contact-text p {
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
+  
+  /* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .contact-header h1 {
+        font-size: 36px; /* Reduce heading size */
+    }
+
+    .contact-description {
+        font-size: 14px;
+        padding: 0 15px; /* Add padding for better spacing */
+    }
+
+    /* Center Contact Info Boxes */
+    .contact-info {
+        display: flex;
+        justify-content: space-between; /* Even spacing */
+        align-items: center; /* Align vertically */
+        text-align: center;
+        background-color: #111;
+        padding: 30px;
+        border-radius: 10px;
+        flex-wrap: wrap; /* Ensures responsiveness */
+    }
+    
+    img, svg {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .contact-item {
+        width: 100%; /* Full width */
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+
+    .icon-circle {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .icon {
+        font-size: 20px;
+    }
+
+    /* Adjust Contact Form */
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Breadcrumb Section */
+    .breadcrumb-container {
+        padding: 10px 0;
+    }
+
+    .breadcrumb-content span {
+        font-size: 14px;
+    }
+}

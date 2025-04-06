@@ -1,0 +1,239 @@
+.about-header {
+  background: black;
+  color: white;
+  padding: 50px 0;
+}/* General Styles */
+.about-header {
+  background: black;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* About Section */
+.about-section {
+  text-align: center;
+  padding: 60px 20px; /* Add some side padding for better mobile view */
+}
+
+/* Hire Button */
+.hire-button {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 30px; /* Space before breadcrumb */
+  font-size: 18px;
+  transition: background 0.3s ease;
+}
+
+.hire-button:hover {
+  background-color: #218838;
+}
+
+/* Breadcrumb Full-Width Container */
+.breadcrumb-containerclass {
+  width: 100%;
+  background-color: #3a3a3a; /* Dark gray background */
+  padding: 15px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Breadcrumb Content */
+.breadcrumb-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Breadcrumb Links */
+.breadcrumb-home {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.breadcrumb-home:hover {
+  color: #45a049;
+}
+
+/* Breadcrumb Text */
+.breadcrumb-content span {
+  font-size: 18px;
+  color: white;
+}
+
+/* About Content */
+.about-content {
+  background: black;
+  color: white;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures proper alignment on smaller screens */
+}
+
+/* Profile Image */
+.profile-img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* About Text Section */
+.about-text-container {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+  padding: 20px;
+}
+
+/* About Title */
+.about-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+/* About Text */
+.about-text,
+.about-description {
+  font-size: 18px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+p em {
+  color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-description{
+    text-align: left;
+  }
+
+  .profile-img {
+    width: 80%; /* Reduce image width for mobile */
+    max-width: 300px;
+  }
+
+
+  /* Ensure image is visible and centered */
+.profile-img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 90%; /* Larger image on small screens */
+    max-width: 320px;
+  }
+
+  .about-text-container {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .info-section {
+    max-width: 100%;
+  }
+
+  .breadcrumb-containerclass {
+    padding: 10px 0;
+  }
+
+  .breadcrumb-content span {
+    font-size: 16px;
+  }
+
+  .hire-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+
+  .about-title {
+    font-size: 22px;
+  }
+
+  .about-text-container {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .hire-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .breadcrumb-content span {
+    font-size: 16px;
+  }
+}
+/* Info Section */
+.info-section {
+  background: black;
+  color: white;
+  padding: 40px 20px;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Columns */
+.info-column p {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+/* Green Arrow Icon */
+.arrow {
+  color: #28a745;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info-section {
+    padding: 30px 15px;
+    max-width: 90%;
+  }
+
+  .info-column p {
+    text-align: left;
+    font-size: 16px;
+  }
+}

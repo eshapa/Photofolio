@@ -1,0 +1,716 @@
+/* Gallery Hero Section */
+.gallery-hero {
+  background: black; /* No background image, just black color */
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.gallery-hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-paragraph {
+  max-width: 600px;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+ 
+.hire-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hire-button:hover {
+  background-color: #218838;
+}
+
+/* Breadcrumb Bar */
+/* Breadcrumb Bar - Full Gray Background */
+.breadcrumb-bar {
+  background: #333; /* Dark Gray */
+  padding: 12px 20px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-top: -60px;
+}
+
+
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Image Slider */
+.image-slider {
+  position: relative;
+  text-align: center;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.img-fluid {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Navigation Arrows */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 100, 0, 0.5); 
+  color: white;
+  border: none;
+  font-size: 1.8rem;
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-btn:hover {
+  background: rgba(0, 100, 0, 0.7);
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+
+/* Dots Navigation */
+.dots-container {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  border-color: green;
+  background-color: green;
+}
+
+/* Portfolio Section */
+.portfolio-details {
+  background-color: #111;
+  color: #fff;
+  padding: 50px 5%;
+  text-align: center;
+}
+
+.portfolio-details h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.portfolio-details p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* Responsive Layout */
+.portfolio-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.left-content {
+  flex: 2;
+  background-color: #111;
+  color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.right-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Testimonial Section */
+.testimonial {
+  background: #222;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.testimonial p {
+  font-size: 16px;
+  font-style: italic;
+  color: #bdbdbd;
+}
+
+.testimonial-info {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+
+
+/* Project Information */
+.project-info {
+  background: #161616;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: left;
+}
+
+.project-info h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0f8f6e;
+  padding-bottom: 5px;
+}
+
+.project-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-info ul li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.project-info ul li strong {
+  color: #0f8f6e;
+}
+
+.visit-website {
+  background: #0f8f6e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.visit-website:hover {
+  background: #0d7a5c;
+}
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .portfolio-details {
+    padding: 30px 5%;
+    text-align: center;
+  }
+
+  .portfolio-details h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .portfolio-details p {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify; /* Improves readability */
+  }
+
+  .testimonial {
+    background: #222;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center; /* Center align text */
+  }
+
+  .testimonial p {
+    font-size: 14px;
+    font-style: italic;
+    color: #bdbdbd;
+  }
+
+  .testimonial-info {
+    flex-direction: column;
+    align-items: center;
+  }
+ .testimonial-img {
+    width: 40px;
+    height: 40px;
+    margin-left: 90px; /* Creates spacing from the text */
+    margin-bottom: 0; /* Removes bottom margin */
+    testimonial-img {
+     
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+  }
+  
+
+  .project-info {
+    max-width: 100%;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .visit-website {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Image Slider */
+.image-slider {
+  position: relative;
+  text-align: center;
+  max-width: 90%;
+  margin: 30px auto;
+  overflow: hidden; /* Ensure images stay inside the container */
+}
+
+.img-fluid {
+  width: 100%;
+  max-height: 500px; /* Adjust as needed */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s ease-in-out;
+  display: block; /* Ensures image is displayed properly */
+}
+
+/* Navigation Arrows */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 100, 0, 0.7);
+  color: white;
+  border: none;
+  font-size: 1.8rem;
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-btn:hover {
+  background: rgba(0, 100, 0, 0.9);
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .image-slider {
+    max-width: 95%;
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    max-height: 300px;
+  }
+
+  .slider-btn {
+    font-size: 1.5rem;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Testimonial Section */
+.testimonial {
+  margin-top: 40px;
+  padding: 20px;
+  background: #ffffff;
+  border-left: 5px solid #007bff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.testimonial p {
+  font-size: 16px;
+  font-style: italic;
+  color: #333;
+}
+
+.testimonial-info {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.testimonial-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.testimonial-info h5 {
+  font-size: 18px;
+  margin: 0;
+  color: #007bff;
+}
+
+.testimonial-info p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+/* General Styles */
+body {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Portfolio Content */
+.portfolio-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  max-width: 6000px;
+  margin: auto;
+  background-color: #000;
+}
+
+
+.container, .left-content, .right-content {
+  background-color: #000 !important;
+}
+
+
+/* Left Content */
+.left-content {
+  flex: 2;
+  padding-right: 20px;
+}
+.left-content, .right-content {
+  background-color: #000 !important; /* Force black background */
+}
+
+
+.left-content h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff; /* White heading */
+}
+
+.left-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc; /* Light gray text */
+}
+.right-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 35%;
+  background: #111; /* Dark background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .right-content {
+    max-width: 100%;
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+/* Project Info Styling */
+.project-info h3 {
+  font-size: 22px;
+  color: #0f9d58; /* Green heading */
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0f9d58;
+  padding-bottom: 5px;
+}
+
+.project-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-info ul li {
+  font-size: 16px;
+  color: #bbb; /* Light gray text */
+  margin-bottom: 10px;
+}
+
+.project-info ul li strong {
+  color: #fff; /* White strong text */
+}
+
+.project-info a {
+  color: #0f9d58; /* Green link */
+  text-decoration: none;
+}
+
+.project-info a:hover {
+  text-decoration: underline;
+}
+
+/* Button Styling */
+.visit-website {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background: #0f9d58; /* Green button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+/* Button Responsive *//* General Styles */
+body {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Portfolio Content */
+.portfolio-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Left Content */
+.left-content {
+  flex: 2;
+  padding-right: 20px;
+}
+
+.left-content h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.left-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* Right Content (Project Info) */
+.right-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 35%;
+  background: #111;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Project Info */
+.project-info h3 {
+  font-size: 22px;
+  color: #0f9d58;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0f9d58;
+  padding-bottom: 5px;
+}
+
+.project-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-info ul li {
+  font-size: 16px;
+  color: #bbb;
+  margin-bottom: 10px;
+}
+
+.project-info ul li strong {
+  color: #fff;
+}
+
+.project-info a {
+  color: #0f9d58;
+  text-decoration: none;
+}
+
+.project-info a:hover {
+  text-decoration: underline;
+}
+
+/* Visit Website Button */
+.visit-website {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background: #0f9d58;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+.visit-website:hover {
+  background: #0b7a44;
+}
+
+/* Responsive Button */
+@media (max-width: 768px) {
+  .visit-website {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+  }
+}
+
+/* Testimonial Section */
+.testimonial {
+  background: #111;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Testimonial Quote */
+.testimonial p {
+  font-style: italic;
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Testimonial Info */
+.testimonial-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+/* Testimonial Image */
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+/* Name & Role */
+.testimonial-info div {
+  text-align: left;
+}
+
+.testimonial-info h5 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.testimonial-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .portfolio-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .left-content, .right-content {
+    max-width: 100%;
+  }
+
+  .right-content {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .testimonial-info {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .testimonial-img {
+    margin-left: 0;
+  }
+}

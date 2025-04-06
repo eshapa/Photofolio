@@ -1,0 +1,425 @@
+/* Services Page */
+.services-section {
+    background: black;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Title and Description */
+.services-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.services-description {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+/* Hire Button */
+.hire-button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.hire-button:hover {
+    background: #1f883d;
+}
+
+/* Breadcrumb */
+.breadcrumb-container {
+    margin-top: -90px;
+}
+
+.breadcrumb-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: left;
+}
+
+.breadcrumb-home {
+    color: #4CAF50;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.breadcrumb-home:hover {
+    color: #45a049;
+}
+
+/* Services Container */
+.services-container {
+    padding-top: 20px;
+}
+
+/* Service Cards */
+.service-card {
+    background: #1a1a1a;
+    color: white;
+    padding: 25px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    background: white; /* Background turns white on hover */
+    color: black; /* Text turns black */
+}
+
+/* Icon Container */
+.icon-container {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 1.5rem;
+    color: #28a745; /* Green icon */
+    position: relative;
+    z-index: 2;
+    transition: background 0.3s, color 0.3s;
+}
+
+.service-card:hover .icon-container {
+    background: #28a745; /* Icon background turns green on hover */
+    color: white; /* Icon turns white */
+}
+
+/* Service Text */
+/* Services Section */
+.services-section {
+  background: black;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Service Cards */
+.service-card {
+  background: #1a1a1a;
+  color: white;
+  padding: 25px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.4s ease-in-out;
+}
+
+/* Hover Effect: Background Turns Green */
+.service-card:hover {
+  background: #28a745; /* Green background on hover */
+}
+
+/* Text Visibility */
+.service-text {
+  position: relative;
+  z-index: 2;
+  color: white; /* Text is always white */
+  transition: color 0.4s ease-in-out;
+}
+
+/* On Hover, Text Becomes Black */
+.service-card:hover .service-text {
+  color: black;
+}
+
+/* Icon Container: White Circle with Green Icon */
+/* Services Section */
+.services-section {
+  background: black;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Service Cards */
+.service-card {
+  background: #1a1a1a;
+  color: white;
+  padding: 25px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.4s ease-in-out;
+}
+
+/* Text Visibility */
+.service-text {
+  color: white; /* Text always remains white */
+  transition: color 0.4s ease-in-out;
+}
+
+/* Icon Container: Default - Green Circle with White Icon */
+/* Services Section */
+.services-section {
+  background: black;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Service Cards */
+.service-card {
+  background: #1a1a1a;
+  color: white;
+  padding: 25px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Bottom to Top Smooth Hover Effect */
+.service-card::before {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #28a745; /* Green background */
+  transition: bottom 0.6s cubic-bezier(0.25, 0.1, 0.25, 1); /* Slower & Smoother */
+  z-index: 0;
+}
+
+/* Hover Effect */
+.service-card:hover::before {
+  bottom: 0; /* Moves the green background from bottom to top */
+}
+
+/* Ensuring content is visible and on top */
+.service-card .icon-container,
+.service-card .service-title,
+.service-card .service-text {
+  position: relative;
+  z-index: 1;
+}
+
+/* Icon Styling */
+.icon-container {
+  width: 60px;
+  height: 60px;
+  background: #28a745; /* Green background */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 1.5rem;
+  color: white; /* White icon */
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+/* On Hover: Icon Changes */
+.service-card:hover .icon-container {
+  background: white; /* White background */
+  color: #28a745; /* Green icon */
+}
+
+/* Text Always Visible */
+.service-card .service-text {
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+/* Services Section */
+.services-section {
+  background: black;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Service Cards */
+.service-card {
+  background: #1a1a1a;
+  color: white;
+  padding: 25px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Bottom to Top Smooth Hover Effect */
+.service-card::before {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #28a745; /* Green background */
+  transition: bottom 0.6s cubic-bezier(0.25, 0.1, 0.25, 1); /* Slower & Smoother */
+  z-index: 0;
+}
+
+/* Hover Effect */
+.service-card:hover::before {
+  bottom: 0; /* Moves the green background from bottom to top */
+}
+
+/* Ensuring content is visible and on top */
+.service-card .icon-container,
+.service-card .service-title,
+.service-card .service-text {
+  position: relative;
+  z-index: 1;
+}
+
+/* Icon Styling */
+.icon-container {
+  width: 60px;
+  height: 60px;
+  background: #28a745; /* Green background */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 1.5rem;
+  color: white; /* White icon */
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+/* On Hover: Icon Changes */
+.service-card:hover .icon-container {
+  background: white; /* White background */
+  color: #28a745; /* Green icon */
+}
+
+/* Text Always Visible */
+.service-card .service-text {
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Subtitle Styling */
+/* Subtitle Styling */
+.pricing-subtitle {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* Green Line Next to Subtitle */
+.pricing-subtitle::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #28a745;
+  margin-left: 10px;
+}
+
+/* Title Styling */
+.pricing-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Pricing Table */
+.pricing-table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.pricing-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 300px;
+}
+
+/* Pricing Rows */
+.pricing-table td {
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+/* Adjust Pricing Alignment */
+.pricing-table td:nth-child(2),.pricing-table td:last-child {
+  text-align: right;
+  color: #28a745;
+}
+
+/* Remove Bottom Border for Last Row */
+.pricing-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* ✅ Fully Responsive Styles */
+@media (max-width: 768px) {
+  .pricing-subtitle {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .pricing-subtitle::after {
+    width: 60px;
+    margin-left: 10px;
+  }
+
+  .pricing-title {
+    font-size: 26px;
+    text-align: left;
+  }
+
+  /* Pricing Table Mobile */
+  .pricing-table table {
+    width: 100%;
+    display: block;
+  }
+
+  /* Stack Items Vertically */
+  .pricing-table tr {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+  }
+
+  .pricing-table td {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .pricing-table td:nth-child(2) {
+    text-align: right;
+  }
+}
